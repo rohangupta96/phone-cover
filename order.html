@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Confirmation</h1>
+        <p>Thank you for your order!</p>
+        <p>Your order has been successfully placed.</p>
+        <!-- You can dynamically insert order details here using JavaScript or server-side rendering -->
+        <p>Order ID: <span id="orderId">123456</span></p>
+        <p>Customer Name: <span id="customerName">John Doe</span></p>
+        <!-- Add more order details here -->
+    </div>
+</body>
+</html>
+
+
+
+<script>
+    // Assume order details are passed as JavaScript variables
+    const orderId = "123456";
+    const customerName = "John Doe";
+
+    // Insert order details into the HTML page
+    document.getElementById("orderId").textContent = orderId;
+    document.getElementById("customerName").textContent = customerName;
+    // Add more dynamic content insertion here if needed
+</script>
